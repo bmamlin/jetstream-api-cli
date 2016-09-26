@@ -7,7 +7,7 @@ Get started quickly with IU Jetstream's API using Docker. Assuming you have [Doc
 You will need a few settings to configure your API access.
 
 * Your `project name` (e.g., `TG-XXXXXXXXX`)
-* Your credentials for the domain (e.g., for [portal.tacc.utexas.edu]https://portal.tacc.utexas.edu/) if you are using the tacc domain)
+* Your credentials for the domain (e.g., for [portal.tacc.utexas.edu](https://portal.tacc.utexas.edu/) if you are using the tacc domain)
 * The `auth-url`. If you don't have this, you can get it through a colleague or the Jetstream helpdesk. This URL is not to be shared publicly.
 
 Copy `jetstream.env.sample` to `jetstream.env` and enter your settings into that file.

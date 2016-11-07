@@ -8,7 +8,7 @@ You will need a few settings to configure your API access.
 
 * Your `project name` (e.g., `TG-XXXXXXXXX`)
 * Your credentials for the domain (e.g., for [portal.tacc.utexas.edu](https://portal.tacc.utexas.edu/) if you are using the tacc domain)
-* The `auth-url`. If you don't have this, you can get it through a colleague or the Jetstream helpdesk. This URL is not to be shared publicly.
+* The `auth-url`. If you don't have this, you can get it through a colleague or the Jetstream helpdesk. This URL is not to be shared publicly. Convenient aliases are included to switch between IU and TACC APIs if you have them.
 
 Copy `jetstream.env.sample` to `jetstream.env` and enter your settings into that file.
 
@@ -19,3 +19,15 @@ $ ./cli.sh
 ```
 
 This should build the jetstream docker image (the first time you run it) and then place you at a command prompt at which you can begin using the OpenStack tools like `nova` or `cinder` (see the [IU Jetstream wiki](https://iujetstream.atlassian.net/wiki/x/CoAKAQ) for more information).
+
+Switch to IU API:
+
+```bash
+$ iu
+```
+
+Switch to TACC API:
+
+```bash
+$ tacc
+```

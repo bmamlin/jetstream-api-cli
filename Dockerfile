@@ -6,7 +6,8 @@ RUN apt-get update && \
 		python-dev \
 		python-pip && \
 	pip install \
-		--upgrade pip \
+		--upgrade pip && \
+	pip install \
 		python-keystoneclient \
 		python-novaclient \
 		python-heatclient \

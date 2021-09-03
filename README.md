@@ -13,7 +13,7 @@ You will need a few settings to configure your API access.
 
 Copy `jetstream.env.sample` to `jetstream.env` and enter your settings into that file.
 
-TIP: You can log into Horizon [https://jblb.jetstream-cloud.org/dashboard](https://jblb.jetstream-cloud.org/dashboard) with your TACC credentials (domain=TACC) and, under the API section, download an auto-generated openrc.sh file that contains the parameters named above.
+TIP: You can log into Horizon [https://iu.jetstream-cloud.org/dashboard](https://iu.jetstream-cloud.org/dashboard) with your TACC credentials (domain=TACC) and, under the API section, download an auto-generated openrc.sh file that contains the parameters named above. You can find a similar file for TACC on on the TACC Openstack [https://tacc.jetstream-cloud.org/dashboard](https://tacc.jetstream-cloud.org/dashboard).
 
 ## Running OpenStack
 

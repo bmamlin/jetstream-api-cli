@@ -6,7 +6,8 @@ RUN apt-get update && \
 		python-dev \
 		python-pip && \
 	pip install \
-		--upgrade pip && \
+		--upgrade pip==20.3.4 && \
+	pip install pbr && \
 	pip install \
 		python-keystoneclient \
 		python-novaclient \

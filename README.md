@@ -4,16 +4,37 @@ Get started quickly with IU Jetstream's API using Docker. Assuming you have [Doc
 
 ## Configuration
 
-You will need a few settings to configure your API access.
+You will need a few settings from your openrc files to configure your API access.
 
-* Your `project name` (e.g., `TG-XXXXXXXXX`)
-* Your `project name id` and `project domain id`
-* Your credentials for the domain (e.g., for [portal.tacc.utexas.edu](https://portal.tacc.utexas.edu/) if you are using the tacc domain)
-* The `auth-url`. If you don't have this, you can get it through a colleague or the Jetstream helpdesk. This URL is not to be shared publicly. Convenient aliases are included to switch between IU and TACC APIs if you have them.
+First, copy `jetstream.env.sample` to `jetstream.env`. You will need to enter some settings
+into this file that you can get from `openrc.sh` files (one for IU and one for TACC) as
+follows:
 
-Copy `jetstream.env.sample` to `jetstream.env` and enter your settings into that file.
+Per [the Jetstream wiki](https://iujetstream.atlassian.net/wiki/x/EIBdAg), you can obtain openrc
+files (one for IU and one for TACC) as follows:
 
-TIP: You can log into Horizon [https://jblb.jetstream-cloud.org/dashboard](https://jblb.jetstream-cloud.org/dashboard) with your TACC credentials (domain=TACC) and, under the API section, download an auto-generated openrc.sh file that contains the parameters named above.
+1. Log into
+   [https://iu.jetstream-cloud.org/](https://iu.jetstream-cloud.org/) using domain `TACC`
+   and your TACC credentials (your credentials for
+   [portal.tacc.utexas.edu](https://portal.tacc.utexas.edu/) that you set up when enrolling
+   into Jetstream)
+2. Click on your username in the upper right hand corner
+3. Click on Download OpenStack RC File v3 to get your `openrc.sh` file for IU
+4. Repeat this process using the domain
+   [https://tacc.jetstream-cloud.org/](https://tacc.jetstream-cloud.org/) (same credentials)
+   to get your `openrc.sh` file for TACC
+
+Within the `openrc.sh` files (one for IU and one for TACC), you will find the settings you will
+need to copy into your `jetstream.env` file.
+
+Replace all instances of `???` in the `jetstream.env` file:
+
+- Your project name (`OS_PROJECT_NAME`) (e.g., `TG-XXXXXXXXX`) from either of
+  your `openrc.sh` files
+- Your credentials for the domain (e.g., for
+  [portal.tacc.utexas.edu](https://portal.tacc.utexas.edu/) if you are using the tacc domain)
+- The values for `OS_AUTH_URL`, `OS_PROJECT_ID`, and `OS_PROJECT_DOMAIN_ID` for
+  both IU and TACC (from the respective `openrc.sh` files you downloaded earlier)
 
 ## Running OpenStack
 

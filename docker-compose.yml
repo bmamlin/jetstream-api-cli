@@ -4,5 +4,3 @@ services:
   cli:
     build: .
     env_file: jetstream.env
-    volumes:
-      - ./bash_aliases:/root/.bash_aliases
